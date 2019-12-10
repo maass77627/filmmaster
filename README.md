@@ -1,6 +1,6 @@
 # Filmmaster
 
-Welcome to Filmmaster! Filmaster helps you make decisions about the next movie you would like to see in theatres! Filmmaster provides a list of the top movies playing near you and allows you to recieve more information on a movie you may be interested in such as the movies title, average vote, description and popularity. 
+Welcome to Filmmaster! Filmaster lets you browse a collection of films from Studio Ghibli, one of the most acclaimed animation studios in the world! Filmmaster provides a list of the top movies from Studio Ghibli and allows you to recieve more information on a movie you may be interested in such as the movies title, director and description.
 
 ## Installation
 
