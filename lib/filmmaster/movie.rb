@@ -1,13 +1,14 @@
 class Filmmaster::Movie
   
- attr_accessor :name, :popularity, :vote_average, :overview
- 
  @@all = []
+  
+ attr_accessor :name, :director, :description
  
-  def initialize(name, popularity, vote_average, overview)
+  def initialize(name, director, description)
     @name = name
-    @popularity = popularity
-    @vote_average = vote_average
+    @director = director
+    @description = description
+    save
   end 
   
   def self.all
@@ -17,6 +18,7 @@ class Filmmaster::Movie
   def save 
     @@all << self
   end 
+  
   
   
   
