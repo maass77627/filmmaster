@@ -1,8 +1,6 @@
 # Filmmaster
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/filmmaster`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Filmmaster! Filmaster helps you make decisions about the next movie you would like to see in theatres! Filmmaster provides a list of the top movies playing near you and allows you to recieve more information on a movie you may be interested in such as the movies title, average vote, description and popularity. 
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+type filmmaster in the command line 
 
 ## Development
 
