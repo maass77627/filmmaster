@@ -3,7 +3,7 @@ class Filmmaster::CLI
   
   def call 
    puts "Welcome to Filmmaster!!"
-   "Here are the current movies playing near you!"
+   "Here are the stop Studio Ghibli films!"
    Filmmaster::API.new.fetch
    list_movies
    menu 
