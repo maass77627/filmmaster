@@ -1,6 +1,6 @@
 # Filmmaster
 
-Welcome to Filmmaster. Filmaster helps you make decisions about the next movie you would like to see in theatres. Filmmaster provides o a list of the top movies playing near you and allows you to recieve more information on a movie you may be interested in such as that movies title, average vote, description and popularity. 
+Welcome to Filmmaster! Filmaster helps you make decisions about the next movie you would like to see in theatres! Filmmaster provides a list of the top movies playing near you and allows you to recieve more information on a movie you may be interested in such as the movies title, average vote, description and popularity. 
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+type filmmaster in the command line 
 
 ## Development
 
