@@ -2,7 +2,9 @@ class Filmmaster::CLI
   
   
   def call 
-    puts "hello world"
+   puts "Welcome to Filmmaster!!"
+   Filmmaster::API.new.fetch
+   
   end 
   
   
