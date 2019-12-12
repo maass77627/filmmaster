@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-type filmmaster in the command line 
+type ruby bin/filmmaster in the command line 
 
 ## Development
 
