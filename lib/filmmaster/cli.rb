@@ -2,26 +2,25 @@ class Filmmaster::CLI
   
   
   def call 
-   puts "Welcome to Filmmaster!!"
-   "Here are the stop Studio Ghibli films!"
-   Filmmaster::API.new.fetch
-   list_movies
-   menu 
-  user_choice = get_user_input
+   puts "Welcome to Filmmaster!,Here are the top Studio Ghibli films!"
+     Filmmaster::API.new.fetch
+     list_movies
+     menu 
+     user_choice = get_user_input
    while validate_input(user_choice) != true 
      menu
      user_choice = get_user_input
    end 
    if user_choice != "exit" 
-   chosen_movie = Filmmaster::Movie.all[user_choice.to_i-1]
+     chosen_movie = Filmmaster::Movie.all[user_choice.to_i-1]
      display_movie(chosen_movie)
    end 
-   goodbye
+     goodbye
     end 
   
   def list_movies
-    Filmmaster::Movie.all.each_with_index do |movie, index|
-      puts "#{index+1}. #{movie.name}" 
+     Filmmaster::Movie.all.each_with_index do |movie, index|
+     puts "#{index+1}. #{movie.name}" 
     end 
   end 
   
@@ -52,7 +51,7 @@ class Filmmaster::CLI
   end 
   
   def goodbye
-    puts "Thank you for using Filmmaster!! Enjoy your Movie!"
+    puts "Thank you for using Filmmaster!! Come back soon!"
   end 
     
   
