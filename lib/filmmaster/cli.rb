@@ -14,6 +14,7 @@ class Filmmaster::CLI
    if user_choice != "exit" 
      chosen_movie = Filmmaster::Movie.all[user_choice.to_i-1]
      display_movie(chosen_movie)
+     final_choice
    end 
      goodbye
     end 
@@ -26,16 +27,16 @@ class Filmmaster::CLI
   
   def get_user_input 
     input = gets.strip 
-     end 
+  end 
   
   def validate_input(input) 
     if input == "exit"
       true 
-      
-    elsif input.to_i  < 1 || input.to_i > Filmmaster::Movie.all.length 
-      false 
-    else 
-      true 
+  
+    elsif input.to_i > 0 && input.to_i < Filmmaster::Movie.all.length 
+      true
+   else 
+      false
     end 
   end 
   
@@ -48,6 +49,18 @@ class Filmmaster::CLI
   def menu 
     ""
     puts "Enter the number of the movie you would like more information on"
+  end 
+  
+  def final_choice
+  puts "If you would like to see another movie, enter number. Hit any other key to exit"
+  user_choice = get_user_input
+  if  validate_input(user_choice) && user_choice != "exit" 
+    menu
+  else 
+   goodbye
+  end 
+  
+  
   end 
   
   def goodbye
